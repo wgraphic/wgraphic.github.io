@@ -1,0 +1,265 @@
+<html>
+
+	<head>
+
+		<title>NAME HERE</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="font/Simple-Line-Icons-Webfont/simple-line-icons.css">
+		<link rel="stylesheet" href="masonry-grid.css">
+		<link rel="stylesheet" href="superslide/dist/stylesheets/superslides.css">
+
+
+		<script src="js/scroll.js"></script>
+		<script src="js/masonry-grid.js"></script>
+		<script src="js/fullscreen-slider.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+	</head>
+
+	<body>
+
+			<!--
+			<div class="top-actions">
+
+				<div class="action">
+				<a href="#"><img src="img/icn-search.png"></a>
+				</div>
+
+				<div class="action">
+				<a href="#"><img src="img/icn-notification.png"></a>
+				</div>	
+
+				<div class="action">
+				<a href="#"><img src="img/icn-plus.png"></a>
+				</div>
+
+				<div class="action">
+				<a href="#"><img src="img/icn-user.png"></a>
+				</div>
+
+			-->
+
+			</div>
+
+			<div class="nav">
+
+				<div class="logo">
+
+					<a href="#"><h1 class="white">NAME HERE</h1></a>
+
+				</div>
+
+				<div class="menu-icon">
+
+					<a href="#"><img src="img/icn-menu.png"></a>
+
+				</div>
+
+			</div>
+
+
+
+			<!-- SIDEBAR -->
+
+			<div class="sidebar">
+
+				<div class="sidebar-head">
+
+					<div class="logo">
+
+						<a href="#"><h1 class="white">NAME HERE</h1></a>
+
+					</div>
+
+					<div class="menu-icon">
+
+						<a href="#"><img src="img/icn-menu.png"></a>
+
+					</div>
+				</div>
+			
+				<div class="sidebar-menu">
+
+					<ul class="menu-labels">
+						<li class="icon-user"><a href="#">Profile</a></li>
+						<li class="icon-bar-chart"><a href="#">Statistics</a></li>
+						<li class="icon-graph"><a href="#">Activity log</a></li>
+						<li class="icon-wrench"><a href="#">Settings</a></li>
+						<li class="icon-support"><a href="#">Home</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+
+
+
+
+			<!-- MAIN -->
+
+			<div class="main">
+
+				<div class="inner-wrapper">
+
+					<div class="map-tools">
+						<select>
+						  <option value="volvo" selected>Choose language</option>
+						  <option value="saab">Swedish</option>
+						  <option value="mercedes">English</option>
+						  <option value="audi">French</option>
+						  <option value="audi">German</option>
+						  <option value="audi">Spanish</option>
+						  <option value="audi">Japanese</option>
+						  <option value="audi">Chinese</option>
+						</select>
+	      				<input class="form location" type="text" placeholder="Location">
+						<button class="select submit" type="button" onclick="alert('Hello World!')">Search</button>
+					</div>
+
+					<!-- MAP -->
+
+					<div id="map">
+					</div> 
+
+
+
+					<!-- FILTER -->
+
+					<!-- <div id="filter-container">
+
+						<div class="content">
+							<input class="form search" type="text" placeholder="Keywords">
+							<input class="form category" type="text" placeholder="Choose category">
+							<input class="form area" type="text" placeholder="Choose area">
+							<input class="form area" type="text" placeholder="Choose skills">
+							<button class="form submit" type="button" onclick="alert('Hello World!')">Submit</button>
+						</div>
+
+					</div> -->
+
+
+
+					<!-- TWO PUSHES -->
+
+					<div class="pushes-container">
+
+						<div class="fifty push overlay-radial row masonry photo_03">
+
+							<span class="push-content" style="z-index:996; text-align:center;">
+							<h1 class="h1-light">Refugees are human beings</h1>
+							<a href="#" class="button-outline">Help out</a>
+							</span>
+
+						</div>
+
+						<div class="fifty push overlay-radial row masonry photo_04">
+
+							<span class="push-content" style="z-index:996; text-align:center;">
+							<h1 class="h1-light">Your help is valuable</h1>
+							<a href="#" class="button-outline">Make a change</a>
+							</span>
+
+						</div>
+
+					</div>
+
+
+
+
+
+
+					<!-- FOOTER -->
+
+					<div id="footer">
+
+						<div class="footer-light"></div>
+
+						<div class="footer-dark">
+
+						    <div class="copyright">
+						 		<span class="white">Copyright 2015</span><span style="color:#ffffff;"> - </span><a href="#">NAME HERE</a>
+						    </div>
+
+						    <div class="social-icons">
+							 	<ul class="icons">
+							    	<li><a class="icon-social-facebook" href="#"></a></li>
+							    	<li><a class="icon-social-twitter" href="#"></a></li>
+							    	<li><a class="icon-social-dribbble" href="#"></a></li>
+							    	<li><a class="icon-social-youtube" href="#"></a></li>
+							    </ul>
+						    </div>
+
+						</div>
+
+					</div>
+
+
+					<!-- MAP -->
+					
+					<script type="text/javascript">
+
+
+					    var locations = [
+					      ['Bondi Beach', 59.284842, 18.019066],
+					      ['Coogee Beach', 59.291768, 18.016834],
+					      ['Cronulla Beach', 59.294486, 17.990055],
+					      ['Manly Beach', 59.283527, 17.972030],
+					      ['Maroubra Beach', 59.291330, 18.029194],
+					      ['Maroubra Beach', 59.307106, 18.022671],
+					      ['Maroubra Beach', 59.316130, 18.040523],
+					      ['Maroubra Beach', 59.312801, 18.053398],
+					      ['Maroubra Beach', 59.313239, 18.060608],
+					      ['Maroubra Beach', 59.278617, 17.973747],
+
+					    ];
+
+					    var map = new google.maps.Map(document.getElementById('map'), {
+					      zoom: 13,
+					      center: new google.maps.LatLng(59.297992, 18.009710),
+					      mapTypeId: google.maps.MapTypeId.ROADMAP
+					    });
+
+					    var infowindow = new google.maps.InfoWindow();
+
+					    var marker, i;
+
+					    for (i = 0; i < locations.length; i++) {  
+					      marker = new google.maps.Marker({
+					        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+					        map: map
+					      });
+
+					      google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+					        return function() {
+					          infowindow.setContent(locations[i][0]);
+					          infowindow.open(map, marker);
+					        }
+					      })(marker, i));
+					    }
+
+						$('.map').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+});
+
+					    <!-- -->
+
+
+					  </script>
+
+					  <!-- MORE MAP SHIT -->
+
+
+
+
+				</div>	
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
